@@ -1,0 +1,40 @@
+:root{
+  --primario:#955082;
+  --secundario:#c8df8c;
+  --nav-background:#f0f0f0;
+}
+body{
+  min-height: 100vh;
+}
+nav,footer{
+  background-color: var(--nav-background);
+}
+
+.nav-text-primario  {
+  color: var(--primario);
+}
+.nav-item{
+  border-bottom: 3px solid transparent;
+  transition: border-bottom 0.4s;
+}
+.nav-item:hover {
+  border-bottom: 3px solid var(--primario);
+}
+nav img{
+  max-height: 100px;
+}
+
+
+
+
+@media only screen and (max-width: 767px) {
+  .active {
+    background-image: linear-gradient(to right, #ffffff, var(--secundario), var(--primario));
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .active {
+    border-bottom: 3px solid var(--primario);
+  }
+}
