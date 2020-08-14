@@ -128,13 +128,13 @@ main {
 .carousel-indicators li {
   height: 20px !important;
   width: 20px !important;
-  opacity: 1;
+  /* opacity: 1; */
+  /* background-color: var(--terciario) !important; */
   background-color: var(--secundario) !important;
 }
 .carousel-indicators .active {
   height: 30px !important;
   width: 30px !important;
-  background-color: var(--terciario) !important;
 }
 
 /* FOOTER */
