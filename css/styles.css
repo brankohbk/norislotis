@@ -39,6 +39,7 @@ footer {
 }
 .border-secundario {
   border-color: var(--secundario) !important;
+  border-width: 1px;
 }
 
 /* COMPONENTES */
@@ -156,6 +157,34 @@ main {
 }
 #cursos .card:hover .card-header{
   background-position: 90%;
+}
+
+/* HISTORIAS */
+#historias .avatar{
+  overflow: hidden;
+}
+#historias .card{
+  background: linear-gradient( 115deg, var(--gris),var(--gris),var(--gris), var(--secundario),var(--gris),var(--gris),var(--gris));
+  background-position: 0%;
+  background-size: 275%;
+  transition: background .8s;
+}
+#historias .card:hover {
+  background-position: 90%;
+}
+
+#historias .card img{
+  transition: transform 0.6s;
+}
+#historias .card:hover img{
+  transform: scale(1.1);
+}
+#historias .card:nth-child(2n) .row{
+  flex-direction: row-reverse;
+}
+
+.modal .avatar{
+  max-height: 40vh;
 }
 
 /* FOOTER */
