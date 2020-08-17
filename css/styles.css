@@ -89,8 +89,8 @@ nav img {
 
 /* MAIN */
 main {
-  margin-top: calc(2vh + var(--header-minh));
-  min-height: 65vh;
+  margin-top: calc(1vh + var(--header-minh));
+  min-height: 64vh;
 }
 
 /* CAROUSEL */
@@ -148,42 +148,92 @@ main {
 }
 
 /* CURSOS */
-#cursos .card-header{
-  background: linear-gradient( 115deg, var(--secundario),var(--secundario),var(--secundario), var(--gris),var(--secundario),var(--secundario),var(--secundario));
+#cursos .card-header {
+  background: linear-gradient(
+    115deg,
+    var(--secundario),
+    var(--secundario),
+    var(--secundario),
+    var(--gris),
+    var(--secundario),
+    var(--secundario),
+    var(--secundario)
+  );
   background-position: 0%;
   background-size: 275%;
-  transition: background .8s;
+  transition: background 0.8s;
   height: 10vh;
 }
-#cursos .card:hover .card-header{
+#cursos .card:hover .card-header {
   background-position: 90%;
 }
 
+/* TERAPIAS */
+
+#terapias .avatar {
+  max-width: 12em;
+  max-height: 12em;
+  border: 5px solid transparent;
+  transition: border 0.7s;
+
+}
+
+#terapias .avatar img {
+  max-height: 100%;
+  object-fit: cover;
+  object-position: right;
+  transition: transform 0.7s;
+}
+
+#terapias .card {
+  box-shadow: none;
+  transition: box-shadow 0.7s;
+}
+#terapias .card:hover img {
+  transform: scale(1.1);
+}
+#terapias .card:hover {
+  box-shadow: 0px 0px 16px var(--primario);
+}
+
+#terapias .card:hover .avatar {
+  border: 5px solid var(--primario);
+}
+
 /* HISTORIAS */
-#historias .avatar{
+.avatar {
   overflow: hidden;
 }
-#historias .card{
-  background: linear-gradient( 115deg, var(--gris),var(--gris),var(--gris), var(--secundario),var(--gris),var(--gris),var(--gris));
+#historias .card {
+  background: linear-gradient(
+    115deg,
+    var(--gris),
+    var(--gris),
+    var(--gris),
+    var(--secundario),
+    var(--gris),
+    var(--gris),
+    var(--gris)
+  );
   background-position: 0%;
   background-size: 275%;
-  transition: background .8s;
+  transition: background 0.8s;
 }
 #historias .card:hover {
   background-position: 90%;
 }
 
-#historias .card img{
+#historias .card img {
   transition: transform 0.6s;
 }
-#historias .card:hover img{
+#historias .card:hover img {
   transform: scale(1.1);
 }
-#historias .card:nth-child(2n) .row{
+#historias .card:nth-child(2n) .row {
   flex-direction: row-reverse;
 }
 
-.modal .avatar{
+.modal .avatar {
   max-height: 40vh;
 }
 
@@ -197,12 +247,9 @@ main {
   /* border: 1px solid; */
 }
 
-#navbar-social a{
+#navbar-social a {
   font-size: 35px;
 }
-
-
-
 
 /* MEDIA QUERIES */
 
