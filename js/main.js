@@ -19,7 +19,8 @@ function scrollProgress() {
   const progressBar=document.getElementsByClassName("progress-bar")[0];
   let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  let scrolled = (winScroll / height) * 100;
+  let scrolled = Math.ceil((winScroll / height) * 100);
+  scrolled = scrolled <= 100 ? scrolled : 100 ;
   progressBar.style.width = scrolled + "%";
   progressBar.setAttribute("aria-valuenow", ""+parseInt(scrolled)) ;
 }

@@ -18,6 +18,11 @@ footer {
   background-color: var(--gris);
 }
 
+a,a:hover,a:focus{
+  color: var(--primario);
+  text-decoration: underline var(--terciario) 2px;
+}
+
 /* CLASES AUXILIARES */
 .text-primario {
   color: var(--primario) !important;
@@ -91,6 +96,11 @@ nav img {
 main {
   margin-top: calc(1vh + var(--header-minh));
   min-height: 64vh;
+}
+
+/* HOME */
+#home{
+  height: 50vh;
 }
 
 /* CAROUSEL */
@@ -204,7 +214,7 @@ main {
 .avatar {
   overflow: hidden;
 }
-#historias .card {
+#historias .card,#sobremi .card {
   background: linear-gradient(
     115deg,
     var(--gris),
@@ -219,14 +229,14 @@ main {
   background-size: 275%;
   transition: background 0.8s;
 }
-#historias .card:hover {
+#historias .card:hover,#sobremi .card:hover {
   background-position: 90%;
 }
 
-#historias .card img {
+#historias .card img,#sobremi .card img {
   transition: transform 0.6s;
 }
-#historias .card:hover img {
+#historias .card:hover img, #sobremi .card:hover img {
   transform: scale(1.1);
 }
 #historias .card:nth-child(2n) .row {
@@ -269,8 +279,8 @@ main {
   .carousel h2 {
     font-size: 5vw;
   }
-  main {
-    min-height: 100%;
+  #home {
+    /* min-height: 100%; */
     padding-bottom: 2em;
   }
 }
