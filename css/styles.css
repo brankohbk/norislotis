@@ -181,17 +181,17 @@ main {
 /* TERAPIAS */
 
 #terapias .avatar {
-  max-width: 12em;
-  max-height: 12em;
+  width: 12em;
+  height: 12em;
   border: 5px solid transparent;
   transition: border 0.7s;
-
 }
 
 #terapias .avatar img {
-  max-height: 100%;
+  width: 12em;
+  height: 12em;
   object-fit: cover;
-  object-position: right;
+  object-position: center;
   transition: transform 0.7s;
 }
 
