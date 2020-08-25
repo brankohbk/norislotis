@@ -63,6 +63,21 @@ a,a:hover,a:focus{
   box-shadow: 1px 2px 10px var(--primario);
 }
 
+.btn-gris {
+  background-color: var(--gris) !important;
+  color: darkgreen;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+.btn-gris:hover {
+  background-color: #d3d3d3 !important;
+  color: #0f0f0f;
+  font-weight: 500;
+  letter-spacing: 3px;
+  box-shadow: 1px 2px 10px var(--primario);
+}
+
 /* HEADER */
 header {
   min-height: var(--header-minh) !important;
@@ -245,6 +260,12 @@ main {
 
 .modal .avatar {
   max-height: 40vh;
+}
+
+/* CONTACTO */
+#contacto form{
+  background-color: var(--gris);
+  border-radius: 1.5em;
 }
 
 /* FOOTER */
