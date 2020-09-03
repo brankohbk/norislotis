@@ -298,6 +298,10 @@ main {
   grid-area: datosContacto;
   max-width: 75vw;
 }
+
+#datosContacto td:nth-of-type(2n){
+  word-break: break-all;
+}
 /* FOOTER */
 
 .footer {

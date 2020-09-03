@@ -104,33 +104,37 @@
         </div>
       </div>
       <div id="datos" class="d-flex flex-wrap flex-column justify-content-between align-content-center">
-        <h2 class="text-primario">¡Dejanos tu mensaje!</h2>
+        <h2 class="text-primario">¡Dejame tu mensaje!</h2>
         <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          <label for="nombre">Nombre:</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Juan Ramírez" aria-placeholder="Juan Ramírez" required aria-required="true">
+          <small id="emailHelp" class="form-text text-muted">* Requerido.</small>
+
         </div>
         <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="juan@sitio.com" aria-placeholder="juan@sitio.com" required aria-required="true">
+          <small id="emailHelp" class="form-text text-muted">* Requerido.</small>
         </div>
+      
         <div class="form-group">
-          <label for="exampleFormControlTextarea1">Example textarea</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <label for="mensaje">Mensaje:</label>
+          <textarea class="form-control" id="mensaje" rows="5" placeholder="Quiero averiguar sobre..." aria-placeholder="Quiero averiguar sobre..." required aria-required="true"></textarea>
+          <small id="emailHelp" class="form-text text-muted">* Requerido.</small>
         </div>
         <div class="d-flex">
           <input class="btn rounded-pill btn-gris ml-auto" type="reset" value="Cancelar">
-          <input class="btn rounded-pill btn-secundario" type="submit" value="Enviar">
+          <input class="btn rounded-pill btn-secundario ml-3" type="submit" value="Enviar">
         </div>
 
 
       </div>
-      <div id="datosContacto" class="border rounded p-3 shadow-sm">
+      <div id="datosContacto" class="border d-none d-lg-block rounded p-3 shadow-sm">
         <p>
           Consultá la disponibilidad de horarios y coordiná la reserva conmigo. <br> La sesiones son presenciales o a
           distancia.
         </p>
-        <table class="ml-3">
+        <table class="ml-md-3">
           <tr>
             <td>Facebook:</td>
             <td>fb.com/NorisLotisHathaYoga</td>
