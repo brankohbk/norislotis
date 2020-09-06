@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <title>Norislotis Club | Yoga Reiki Metafísica</title>
+  <title>Norislotis Club | HISTORIAS</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
 
   <link rel="stylesheet" href="css/styles.css">
@@ -25,7 +25,7 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbar">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item ">
-            <a class="nav-link" href="index.html">Home </a>
+            <a class="nav-link" href="index.html">Inicio </a>
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="cursos.html">Cursos <span class="sr-only">(actual)</span></a>
@@ -74,7 +74,7 @@
                 </p>
               </div>
               <div class="card-footer text-center bg-transparent">
-              <button class="btn text-upercase rounded-pill btn-secundario d-inline-flex justify-content-around align-items-center" data-toggle="modal" data-target="#modalHistorias"><span>Quiero saber más</span></button>
+              <button class="btn text-upercase rounded-pill btn-secundario d-inline-flex justify-content-around align-items-center" data-toggle="modal" data-target="#modalHistorias" data-asunto="reiki"><span>Quiero saber más</span></button>
             </div>
           </div>
         </div>
@@ -99,7 +99,7 @@
                 </p>
               </div>
             <div class="card-footer text-center bg-transparent">
-              <button class="btn text-upercase rounded-pill btn-secundario d-inline-flex justify-content-around align-items-center" data-toggle="modal" data-target="#modalHistorias"><span>Quiero saber más</span></button>
+              <button class="btn text-upercase rounded-pill btn-secundario d-inline-flex justify-content-around align-items-center" data-toggle="modal" data-target="#modalHistorias" data-asunto="metafisica"><span>Quiero saber más</span></button>
             </div>
           </div>
         </div>
@@ -124,7 +124,7 @@
                 </p>
             </div>
             <div class="card-footer text-center bg-transparent">
-              <button class="btn text-upercase rounded-pill btn-secundario d-inline-flex justify-content-around align-items-center" data-toggle="modal" data-target="#modalHistorias"><span>Quiero saber más</span></button>
+              <button class="btn text-upercase rounded-pill btn-secundario d-inline-flex justify-content-around align-items-center" data-toggle="modal" data-target="#modalHistorias" data-asunto="flores"><span>Quiero saber más</span></button>
             </div>
           </div>
         </div>
@@ -134,7 +134,7 @@
           <div class="col-md-4 avatar">
             <img src="img/wood-3328883_960_720.jpg" class="card-img h-100 rounded-0" alt="img/wood-3328883_960_720.jpg">
           </div>
-          <div class="col-md-8 d-flex flex-column">
+          <div id="texto-historia" class="col-md-8 d-flex flex-column">
             <div class="card-body">
               <h2 class="card-title text-uppercase">serenidad</h2>
               <p class="card-text">CONTEMPLA EL ESPECTÁCULO DE LA VIDA CON UNA MENTE TRANQUILA:                
@@ -147,9 +147,28 @@
                     <footer class="blockquote-footer bg-transparent">Paramahansa Yogananda</footer>
                   </blockquote>
                 </p>
+                <p class="card-text">CONTEMPLA EL ESPECTÁCULO DE LA VIDA CON UNA MENTE TRANQUILA:                
+                  <blockquote class="blockquote">
+                    <p class="mb-0">“No te sientas eufórico ni deprimido por nada que se encuentre fuera de ti.
+                      Contempla el espectáculo pasajero de la vida con una mente tranquila.
+                      Los altibajos de la vida no son más que olas en un océano, constantemente
+                      en movimiento. Evita involucrarte emocionalmente con ellos, permanenciendo
+                      siempre tranquilo, siempre feliz, en tu centro interior en la columna vertebral”.</p>
+                      <footer class="blockquote-footer bg-transparent">Paramahansa Yogananda</footer>
+                    </blockquote>
+                  </p>              <p class="card-text">CONTEMPLA EL ESPECTÁCULO DE LA VIDA CON UNA MENTE TRANQUILA:                
+                    <blockquote class="blockquote">
+                      <p class="mb-0">“No te sientas eufórico ni deprimido por nada que se encuentre fuera de ti.
+                        Contempla el espectáculo pasajero de la vida con una mente tranquila.
+                        Los altibajos de la vida no son más que olas en un océano, constantemente
+                        en movimiento. Evita involucrarte emocionalmente con ellos, permanenciendo
+                        siempre tranquilo, siempre feliz, en tu centro interior en la columna vertebral”.</p>
+                        <footer class="blockquote-footer bg-transparent">Paramahansa Yogananda</footer>
+                      </blockquote>
+                    </p>
             </div>
             <div class="card-footer text-center bg-transparent">
-              <button class="btn text-upercase rounded-pill btn-secundario d-inline-flex justify-content-around align-items-center" data-toggle="modal" data-target="#modalHistorias"><span>Quiero saber más</span></button>
+              <button class="btn text-upercase rounded-pill btn-secundario d-inline-flex justify-content-around align-items-center" data-toggle="modal" data-target="#modalHistorias" data-asunto="yoga"><span>Quiero saber más</span></button>
             </div>
           </div>
         </div>
@@ -177,11 +196,11 @@
 
       </footer>
 <!-- Modal -->
-<div class="modal fade" id="modalHistorias" tabindex="-1" aria-labelledby="modalHistoriasLabel" aria-hidden="true">
+<div class="modal fade " id="modalHistorias" tabindex="-1" aria-labelledby="modalHistoriasLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg ">
     <div class="modal-content rounded-sm">
       <div class="modal-header">
-        <h2 class="modal-title ml-auto text-primario " id="modalHistoriasLabel">¿Querés aprender más sobre Reiki?</h2>
+        <h2 class="modal-title ml-auto text-primario " id="modalHistoriasLabel">¿Querés aprender más sobre <span id="modal-asunto"></span> ?</h2>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -189,11 +208,23 @@
       <div class="modal-body">
         <div class="card shadow-none">
           <div class="avatar vh-25">
-            <img class="card-img-top vh-" src="img/carousel_terapias.jpg" alt="reiki">
+            <img class="card-img-top vh-">
           </div>
           <div class="card-body">
-            <h5 class="card-title">Title</h5>
-            <p class="card-text">Content</p>
+            <div class="container-fluid">
+              <div class="row">
+                <div id="modal-descripcion" class="col-12 col-md-8">
+                  
+                </div>
+                <div class="col-12 col-md-4">
+                  <ul id="modal-cronograma">
+
+                  </ul>
+                  
+                </div>
+              </div>
+            </div>
+            
           </div>
         </div>
       </div>
@@ -213,6 +244,7 @@
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/cursos.js"></script>
 <script src="js/main.js"></script>
 </body>
 
