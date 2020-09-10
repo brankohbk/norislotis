@@ -54,7 +54,7 @@
   <main id="contacto" class="d-flex flex-column align-items-center justify-content-around flex-grow-1">
     <h1 class="text-primario text-decoration-underline mt-5">Contacto</h1>
     <!-- CONTENIDO -->
-    <form id="form-contacto" action="" class="p-3 m-3">
+    <form id="form-contacto" action="form.php" method="POST" class="p-3 m-3">
       <div id="selecciones" class="">
         <h2 class="text-primario">¿Qué cursos y terapias
           te interesan?</h2>
@@ -63,23 +63,23 @@
             <legend class="text-primario">Terapias</legend>
             <div class="container">
               <div class="form-row justify-content-center align-items-center">
-                <label class="col-12 col-md-6 col-lg-4"><input class="form-check-input" type="checkbox" name="terapias"
+                <label class="col-12 col-md-6 col-lg-4"><input class="form-check-input" type="checkbox" name="terapias[]"
                     value="Reiki Usui">Reiki Usui</label>
-                <label class="col-12 col-md-6 col-lg-4"><input class="form-check-input" type="checkbox" name="terapias"
+                <label class="col-12 col-md-6 col-lg-4"><input class="form-check-input" type="checkbox" name="terapias[]"
                     value="Flores de Bach">Flores de Bach</label>
-                <label class="col-12 col-md-6 col-lg-4"><input class="form-check-input" type="checkbox" name="terapias"
+                <label class="col-12 col-md-6 col-lg-4"><input class="form-check-input" type="checkbox" name="terapias[]"
                     value="Quantec">Quantec</label>
-                <label class="col-12 col-md-6 col-lg-4"><input class="form-check-input" type="checkbox" name="terapias"
+                <label class="col-12 col-md-6 col-lg-4"><input class="form-check-input" type="checkbox" name="terapias[]"
                     value="Radiónica">Radiónica</label>
-                <label class="col-12 col-md-6 col-lg-4"><input class="form-check-input" type="checkbox" name="terapias"
-                    value="Tesla Vitalis">Tesla Vitalis</label>
-                <label class="col-12 col-md-6 col-lg-4"><input class="form-check-input" type="checkbox" name="terapias"
+                <label class="col-12 col-md-6 col-lg-4"><input class="form-check-input" type="checkbox" name="terapias[]"
+                    value="Reconexión Vital">Reconexión Vital</label>
+                <label class="col-12 col-md-6 col-lg-4"><input class="form-check-input" type="checkbox" name="terapias[]"
                     value="Sanjeevini">Sanjeevini</label>
-                <label class="col-12 col-md-6 col-lg-4"><input class="form-check-input" type="checkbox" name="terapias"
+                <label class="col-12 col-md-6 col-lg-4"><input class="form-check-input" type="checkbox" name="terapias[]"
                     value="Memoria Celular">Memoria Celular</label>
-                <label class="col-12 col-md-6 col-lg-4"><input class="form-check-input" type="checkbox" name="terapias"
-                    value="Yoga integral">Yoga integral</label>
-                <label class="col-12 col-md-6 col-lg-4"><input class="form-check-input" type="checkbox" name="terapias"
+                <label class="col-12 col-md-6 col-lg-4"><input class="form-check-input" type="checkbox" name="terapias[]"
+                    value="Yoga Integral">Yoga Integral</label>
+                <label class="col-12 col-md-6 col-lg-4"><input class="form-check-input" type="checkbox" name="terapias[]"
                     value="Metafísica">Metafísica</label>
               </div>
             </div>
@@ -88,16 +88,16 @@
             <legend class="text-primario">Cursos</legend>
             <div class="container">
               <div class="form-row">
-                <label class="col-12 col-md-6 col-lg-4"><input class="form-check-input" type="checkbox" name="cursos"
+                <label class="col-12 col-md-6 col-lg-4"><input class="form-check-input" type="checkbox" name="cursos[]"
                     value="Reiki Usui">Reiki Usui</label>
-                <label class="col-12 col-md-6 col-lg-4"><input class="form-check-input" type="checkbox" name="cursos"
-                    value="Hatha Yoga">Hatha Yoga</label>
+                <label class="col-12 col-md-6 col-lg-4"><input class="form-check-input" type="checkbox" name="cursos[]"
+                    value="Yoga Integral">Yoga Integral</label>
               </div>
               <div class="form-row">
-                <label class="col-12 col-md-6 col-lg-4"><input class="form-check-input" type="checkbox" name="cursos"
+                <label class="col-12 col-md-6 col-lg-4"><input class="form-check-input" type="checkbox" name="cursos[]"
                     value="Metafísica">Metafísica</label>
-                <label class="col-12 col-md-6 col-lg-4"><input class="form-check-input" type="checkbox" name="cursos"
-                    value="Alimentación">Alimentación Naturista</label>
+                <label class="col-12 col-md-6 col-lg-4"><input class="form-check-input" type="checkbox" name="cursos[]"
+                    value="Alimentación Naturista">Alimentación Naturista</label>
               </div>
             </div>
           </fieldset>
@@ -107,19 +107,19 @@
         <h2 class="text-primario">¡Dejame tu mensaje!</h2>
         <div class="form-group">
           <label for="nombre">Nombre:</label>
-          <input type="text" class="form-control" id="nombre" placeholder="Juan Ramírez" aria-placeholder="Juan Ramírez" required aria-required="true">
+          <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Juan Ramírez" aria-placeholder="Juan Ramírez" required aria-required="true">
           <small id="emailHelp" class="form-text text-muted">* Requerido.</small>
 
         </div>
         <div class="form-group">
           <label for="email">Email:</label>
-          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="juan@sitio.com" aria-placeholder="juan@sitio.com" required aria-required="true">
+          <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="juan@sitio.com" aria-placeholder="juan@sitio.com" required aria-required="true">
           <small id="emailHelp" class="form-text text-muted">* Requerido.</small>
         </div>
       
         <div class="form-group">
           <label for="mensaje">Mensaje:</label>
-          <textarea class="form-control" id="mensaje" rows="5" placeholder="Quiero averiguar sobre..." aria-placeholder="Quiero averiguar sobre..." required aria-required="true"></textarea>
+          <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Quiero averiguar sobre..." aria-placeholder="Quiero averiguar sobre..." required aria-required="true"></textarea>
           <small id="emailHelp" class="form-text text-muted">* Requerido.</small>
         </div>
         <div class="d-flex">

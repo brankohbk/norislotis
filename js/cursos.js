@@ -37,7 +37,8 @@ const cursos = {
       `La Ciencia del Yoga comprende varios métodos o sistemas:`,
       `Hatha Yoga:Sistema Psicofísico de bienestar general, el cual prepara el cuerpo para recibir la energía o Prana en mayor intensidad que con otras prácticas. Su práctica se compone de tres importantes elementos: Respiración, Posturas o Asanas y Concentración.
       La enseñanza del Hatha Yoga debe ser bien dirigida y practicada, ya que cada acción tiene indicaciones necesarias no sólo para el armado de cada Asana, sino también para el cuidado del principiante.`,
-      `Laya Yoga: Significa la absorción completa o fusión de la mente con algún concepto mental de la Divinidad en los sonidos astrales internos.`,
+      `Bhakti Yoga: Es la suma de la devoción y la entrega total.`,
+      `Guiana Yoga: Es la senda de la sabiduría.`,
       `Karma Yoga: Significa la unión con Dios, en primer  lugar a través de las acciones nobles y la actividad correcta , y en segundo término, mediante la acción meditativa.`,
       `Mantra Yoga: Nos enseña a unificar el alma y el Espíritu concentrándose en los sonidos o mantras que tienen una vibración específica y armonizan la vibración individual.`,
       `Raja Yoga: Esta práctica combina los sencillos métodos de la disciplina psicofísica del Hatha con métodos elevados de Meditación.`,
