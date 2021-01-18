@@ -7,8 +7,8 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title>Norislotis Club | SerFelizEsCienciaYArte</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
-
   <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/fontawesome.min.js"></script>
 </head>
 
 <body class="d-flex flex-column justify-content-between min-vh-100">
@@ -144,14 +144,13 @@ else{
             <a target="_blank" rel="nofollow noopener noreferrer" href="https://www.twitter.com/norislotis/"><i class="fab fa-twitter-square text-primary"></i></a>
             </div>
             <span class="mt-2 mt-md-0 col-5 col-lg-4">Norislotis Club<br class="d-inline d-sm-none"><span
-                class="d-none d-md-inline"> | Copyright</span> &copy; 2020 </span>
+                class="d-none d-md-inline"> | Copyright</span> &copy; 2021 </span>
             <span class="my-2 my-md-0 col-5 col-lg-4 font-weight-light">Hecho <span class="d-none d-md-inline">con <i
                 class="fas fa-heart text-danger"></i> </span>por <a target="_blank" rel="nofollow noopener noreferrer"
                 href="http://dreamcatcher.com.ar">Dreamcatcher</a> </span>
         </div>
         </footer>
 
-      <script src="js/fontawesome.min.js"></script>
       <script src="js/jquery-3.5.1.min.js"></script>
       <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>

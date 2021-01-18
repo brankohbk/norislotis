@@ -24,7 +24,9 @@ a:focus {
   color: var(--primario);
   text-decoration: underline var(--terciario) 2px;
 } */
-
+.avatar {
+  overflow: hidden;
+}
 .card {
   box-shadow: none;
   transition: box-shadow 0.7s;
@@ -124,9 +126,7 @@ main {
 }
 
 /* HOME */
-#home {
-  height: 50vh;
-}
+
 
 /* CAROUSEL */
 .carousel {
@@ -234,9 +234,7 @@ main {
 }
 
 /* HISTORIAS */
-.avatar {
-  overflow: hidden;
-}
+
 #historias .card,
 #sobremi .card {
   background: linear-gradient(
@@ -269,15 +267,16 @@ main {
   flex-direction: row-reverse;
 }
 
-#texto-historia{
-  height: 350px;
-}
-#historias .card-body{
-  max-height: 95%;
+#historias .card-body {
   overflow: auto;
+  max-height: 70%;
 }
 
-
+#historias img {
+  max-height: 400px;
+  object-fit: cover;
+  object-position: top;
+}
 
 .modal .avatar {
   max-height: 40vh;
@@ -285,15 +284,46 @@ main {
 
 /* SOBRE MI */
 
-
-
-#sobremi .card img{
+#sobremi .card img {
   max-height: 500px;
   object-fit: cover;
   object-position: top;
 }
 
+#biografia{
 
+}
+
+/* Estilos de scrollbar */
+/* width */
+#sobremi ::-webkit-scrollbar,
+#historias ::-webkit-scrollbar {
+  width: 3px;
+}
+#sobremi *:hover ::-webkit-scrollbar,
+#historias *:hover ::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+#sobremi ::-webkit-scrollbar-track,
+#historias ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;  
+}
+
+/* Handle */
+#sobremi ::-webkit-scrollbar-thumb,
+#historias ::-webkit-scrollbar-thumb {
+  background: var(--primario);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+#sobremi ::-webkit-scrollbar-thumb:hover,
+#historias ::-webkit-scrollbar-thumb:hover {
+  background: #723c63;
+}
 
 /* CONTACTO */
 #form-contacto {
@@ -320,17 +350,13 @@ main {
   max-width: 75vw;
 }
 
-#datosContacto td:nth-of-type(2n){
+#datosContacto td:nth-of-type(2n) {
   word-break: break-all;
 }
 /* FOOTER */
 
 .footer {
   max-width: 100vw;
-}
-
-.footer * {
-  /* border: 1px solid; */
 }
 
 #navbar-social a {
@@ -356,20 +382,27 @@ main {
     font-size: 5vw;
   }
   #home {
-    /* min-height: 100%; */
     padding-bottom: 2em;
   }
-  #sobremi {
-    height: 50vh;
+  #historias .avatar {
+    max-height: 400px;
   }
-  #sobremi .card-body{
+  #historias .card {
+    max-height: 400px;
+  }
+  #historias .card-content {
+    height: 400px;  
+  }
+  #sobremi {
+  }
+  #sobremi .card-body {
     max-height: 500px;
     overflow-y: auto;
   }
-  #form-contacto{
+  #form-contacto {
     grid-template-areas:
-    "selecciones datos"
-    "datosContacto datos";
+      "selecciones datos"
+      "datosContacto datos";
   }
 }
 
